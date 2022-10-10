@@ -31,3 +31,29 @@
 
 }
 ```
+
+#Deploy Heroku
+
+- Instalar heroku CLI
+- Sincronizar prissma con el postgres de heroku
+  -no se puede usar prisma migrate usar :
+
+  ```javascript
+  npx prisma  db push
+  ```
+
+  - Correr el seed
+
+    ```javascript
+       npm run seed
+    ```
+
+  ```
+  -Realizar el build de typescript
+  -Modificar el entrypoint de la app(./dist/src/server.js)
+  -Agregar los scripts "start" y "build"
+  -Tener en cuenta los rootDirs y out dir en tsconfig.json
+
+  ```
+
+- Crear el archivo Procfile en el root del proyecto ("web: node dist/src/server.js")
