@@ -7,14 +7,15 @@
     "seed": "ts-node  prisma/seed.ts"
   },
   "scripts": {
-    "start": "node dist/server.js",
+    "start": "node dist/src/server.js",
+    "build": "tsc --build tsconfig.json",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "ts-node-dev --respawn ./src/server",
     "migrate": "prisma migrate dev",
     "generate": "prisma generate",
     "seed": "prisma db seed",
     "studio": "prisma studio",
-    "build": "tsc --build tsconfig.json"
+    "deploy": "git add . && git commit -m Heroku && git push heroku main"
   },
   "repository": {
     "type": "git",
