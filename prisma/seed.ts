@@ -30,7 +30,8 @@ export async function seed() {
     data: [
       {
         name: 'RTX 3090',
-        imgUrl: 'img/Tarjetas de video/rtx 3090.jpg',
+        imgUrl:
+          'https://res.cloudinary.com/dhfwuqzoz/image/upload/v1665515363/Products/img/Tarjetas%20de%20video/rtx_3090_cwbdvb.jpg',
         categoryId: 1,
         price: 300000,
       },
