@@ -12,9 +12,9 @@ export async function seed() {
   //     { state: 'rejected' },
   //   ],
   // });
-  await prisma.role.createMany({
-    data: [{ role: 'admin' }, { role: 'user' }],
-  });
+  // await prisma.role.createMany({
+  //   data: [{ role: 'admin' }, { role: 'user' }],
+  // });
   await prisma.category.createMany({
     data: [
       { category: 'Destacados' },
