@@ -2,19 +2,19 @@ import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
 export async function seed() {
-  // await prisma.states.createMany({
-  //   data: [
-  //     { state: 'active' },
-  //     { state: 'pending' },
-  //     { state: 'cancelled' },
-  //     { state: 'disabled' },
-  //     { state: 'approved' },
-  //     { state: 'rejected' },
-  //   ],
-  // });
-  // await prisma.role.createMany({
-  //   data: [{ role: 'admin' }, { role: 'user' }],
-  // });
+  await prisma.states.createMany({
+    data: [
+      { state: 'active' },
+      { state: 'pending' },
+      { state: 'cancelled' },
+      { state: 'disabled' },
+      { state: 'approved' },
+      { state: 'rejected' },
+    ],
+  });
+  await prisma.role.createMany({
+    data: [{ role: 'admin' }, { role: 'user' }],
+  });
   await prisma.category.createMany({
     data: [
       { category: 'Destacados' },
