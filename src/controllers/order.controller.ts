@@ -12,5 +12,5 @@ export const createOrder = async (
     return next(order.err);
   }
 
-  res.status(500).json({ state: 'success', data: order });
+  res.json({ state: 'success', data: order });
 };
