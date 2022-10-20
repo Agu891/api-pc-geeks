@@ -1,7 +1,7 @@
 # API PC GEEKS
 # Una api desarrollada para el proyecto final backend de Nucba
 
-Base de datos de arquitectura hexagonal deployada en heroku. Desarrollada con Express,  Node.js, Prisma,  Typescript, Postgresql y Docker y testeada con Postman
+Base de datos de arquitectura hexagonal deployada en Heroku. Desarrollada con Express,  Node.js, Prisma,  Typescript, Postgresql,  Docker y testeada con Postman
 
 # Usuarios de prueba para mercadopago
 
